@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controladores.IngresoController">
+  <children>
+    <Label fx:id="LUsuario" layoutX="465.0" layoutY="63.0" prefWidth="48.0" text="" />
+    <TextField fx:id="TTitulo" layoutX="152.0" layoutY="95.0" prefWidth="200.0" />
+    <!--<Button id="btn1" fx:id="BCambiar" layoutX="65.0" layoutY="365.0" mnemonicParsing="false" onAction="#cambiarUsuario" text="&lt; Cambiar usuario" />-->
+    <Button id="BAgregar" fx:id="BAgregarPaisaje" layoutX="465.0" layoutY="329.0" mnemonicParsing="false" onAction="#MostrarVentanaAdvertencia" prefHeight="57.0" prefWidth="121.0" text="Agregar Paisaje" />
+    <Label fx:id="LTitulo" layoutX="65.0" layoutY="79.0" text="Titulo" />
+    <Label fx:id="LDescricion" layoutX="65.0" layoutY="117.0" text="Descripcion" />
+    <TextField fx:id="TDescripcion" layoutX="152.0" layoutY="133.0" prefWidth="200.0" />
+    <Label fx:id="LImagen" layoutX="65.0" layoutY="155.0" text="Imagen" />
+    <ImageView fx:id="IVImagen" fitHeight="152.25" fitWidth="203.0" layoutX="153.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true" />
+    <Button fx:id="BImagen" layoutX="224.0" layoutY="329.0" mnemonicParsing="false" onAction="#agregarImagen" text="Agregar Imagen" />
+  </children>
+</AnchorPane>

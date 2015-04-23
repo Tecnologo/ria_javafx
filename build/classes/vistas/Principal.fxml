@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.PrincipalController">
+   <children>
+      <TabPane fx:id="tabPane" prefHeight="400.0" prefWidth="475.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="homeTab" closable="false" text="Home">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="511.0">
+                     <children>
+                        <!--<Button fx:id="BAgregar" layoutX="370.0" layoutY="313.0" mnemonicParsing="false" onAction="#MostrarVentanaAdvertencia" text="Agregar" />-->
+                        <!--<Button fx:id="BCargarImagen" layoutX="46.0" layoutY="52.0" mnemonicParsing="false" onAction="#MostrarVentanaBuscador" text="Cargar Imágen" />-->
+                        <Label fx:id="ETitulo" layoutX="66.0" layoutY="131.0" text="Titulo" />
+                        <Label fx:id="EDescripcion" layoutX="66.0" layoutY="177.0" text="Descripción" />
+                        <TextField fx:id="TTitulo" layoutX="163.0" layoutY="136.0" />
+                        <TextArea fx:id="TDescripcion" layoutX="163.0" layoutY="177.0" prefHeight="121.0" prefWidth="215.0" />
+                        <!--<ImageView fx:id="imagenPrueba" fitHeight="84.0" fitWidth="104.0" layoutX="238.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />-->
+                        <Label fx:id="EUsuario2" layoutX="356.0" layoutY="35.0" />
+                        <Label fx:id="ENombre" layoutX="356.0" layoutY="52.0" />
+                        <!--<Button fx:id="BCambiar" layoutX="70.0" layoutY="31.0" mnemonicParsing="false" onAction="#MostrarPestañaVer" text="Cambiar Pestaña" />-->
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

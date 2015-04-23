@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="106.0" prefWidth="201.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.AdvertenciaController">
+   <children>
+      <Label layoutY="23.0" text="¿Está seguro de agregar una nueva imágen?" />
+      <Button fx:id="BSi" layoutX="42.0" layoutY="57.0" mnemonicParsing="false" onAction="#GrabarPaisaje" prefHeight="25.0" prefWidth="45.0" text="SI" />
+      <Button fx:id="BNo" layoutX="125.0" layoutY="57.0" mnemonicParsing="false" onAction="#CerrarVentana" prefHeight="25.0" prefWidth="51.0" text="NO" />
+   </children>
+</AnchorPane>
