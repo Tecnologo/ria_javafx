@@ -11,24 +11,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<AnchorPane id="AnchorPane" onMouseClicked="#listarPaisajes" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controladores.VerController">
+<AnchorPane id="AnchorPane" onMouseClicked="#listarPaisajes" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.VerController">
   <children>
     <Label fx:id="LPaisajes" layoutX="109.0" layoutY="15.0" text="Paisajes" />
     <ImageView fx:id="ima" fitHeight="150.0" fitWidth="200.0" layoutX="169.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
     <Label id="lasd" fx:id="la" layoutX="507.0" layoutY="31.0" prefWidth="40.0" text="" />
-    <ListView fx:id="ListView" layoutX="0" layoutY="30" prefWidth="600" prefHeight="300">
-        <HBox fx:id="listBox" alignment="CENTER_LEFT">
-            <HBox alignment="CENTER_LEFT" prefWidth="170" minWidth="88">
-                <Label fx:id="titulo" text="Field A" styleClass="Name"></Label>
-            </HBox>
-            <VBox styleClass="Description" prefWidth="155" minWidth="86">
-                <HBox>
-                    <HBox styleClass="surveyDesIcon" prefWidth="20" prefHeight="16"></HBox>
-                    <Label fx:id="descripcion" text="PRW3456HJ"></Label>
-                </HBox>
-            </VBox>
-        </HBox>
-</ListView>
-    <Button id="BAgregar" fx:id="BAgregarPaisaje" layoutX="465.0" layoutY="329.0" mnemonicParsing="false" onAction="#listarPaisajes" prefHeight="57.0" prefWidth="121.0" text="Listar Paisaje" /> 
+    <Button id="BAgregar" fx:id="BAgregarPaisaje" layoutX="457.0" layoutY="312.0" mnemonicParsing="false" onAction="#listarPaisajes" prefHeight="24.0" prefWidth="121.0" text="Listar Paisaje" />
+    <AnchorPane fx:id="anchorPane" layoutX="9.0" layoutY="32.0" prefHeight="280.0" prefWidth="581.0" /> 
    </children>
 </AnchorPane>

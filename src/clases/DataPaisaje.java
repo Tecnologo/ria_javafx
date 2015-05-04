@@ -21,50 +21,57 @@ public class DataPaisaje {
 
     //Properties 
     private SimpleStringProperty titulo = new SimpleStringProperty();
-    private SimpleStringProperty descripcion = new SimpleStringProperty();
+    private SimpleStringProperty  descripcion = new SimpleStringProperty();
     private IntegerProperty id= new SimpleIntegerProperty();
-    private ObjectProperty<javafx.scene.image.Image> imagen = new SimpleObjectProperty<>();
+    private ObjectProperty imagen = new SimpleObjectProperty();
  
 
     public DataPaisaje(Paisaje p) { 
-        Bindings.bindBidirectional(this.imagen.imageProperty(), GlobalModel.getInstance().getProject().getImageProperty());
 
-        setTitulo(new SimpleStringProperty(p.getTitulo()));
-        setImagen(new SimpleStringProperty(url));
-        setId(new SimpleIntegerProperty(p.getId()));
-        setDescripcion(new SimpleStringProperty(p.getDescripcion()));
+        setTitulo(p.getTitulo());
+        setImagen(p.getImagen());
+        setId(p.getId());
+        setDescripcion(p.getDescripcion());
     }
 
-    public SimpleStringProperty getTitulo() {
+    public SimpleStringProperty tituloProperty() {
         return titulo;
     }
-
-    public void setTitulo(SimpleStringProperty titulo) {
-        this.titulo = titulo;
+    public String getTitulo() {
+        return titulo.get();
+    }
+    public void setTitulo(String titulo) {
+        this.titulo.set(titulo);
     }
 
-    public SimpleStringProperty getDescripcion() {
+    public String getDescripcion() {
+        return descripcion.get();
+    }
+    public SimpleStringProperty descripcionProperty() {
         return descripcion;
     }
-
-    public void setDescripcion(SimpleStringProperty descripcion) {
-        this.descripcion = descripcion;
+    public void setDescripcion(String descripcion) {
+        this.descripcion.set(descripcion);
     }
-
-    public StringProperty getImagen() {
+    public ObjectProperty imagenProperty() {
         return imagen;
     }
-
-    public void setImagen(StringProperty imagen) {
-        this.imagen = imagen;
+    public Object getImagen() {
+        return imagen.get();
     }
 
-    public IntegerProperty getId() {
+    public void setImagen(Object imagen) {
+        this.imagen.set(imagen);
+    }
+    public IntegerProperty idProperty() {
         return id;
     }
+    public Integer getId() {
+        return id.get();
+    }
 
-    public void setId(IntegerProperty id) {
-        this.id = id;
+    public void setId(Integer id) {
+        this.id.set(id);
     }
 
      
