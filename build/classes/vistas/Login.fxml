@@ -9,9 +9,10 @@
 <AnchorPane id="AnchorPane" prefHeight="260.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.LoginController">
     
     <children>
-        <Label fx:id="EUsuario" layoutX="37.0" layoutY="30.0" minHeight="16" minWidth="69" styleClass="etiqueta" text="Usuario" />
-      <TextField fx:id="TUsuario" layoutX="37.0" layoutY="55.0" />
+        <Label fx:id="EUsuario" layoutX="58.0" layoutY="86.0" minHeight="16" minWidth="49.0" prefHeight="17.0" prefWidth="49.0" styleClass="etiqueta" text="Usuario" />
+      <TextField fx:id="TUsuario" layoutX="138.0" layoutY="82.0" />
 <!--      <Button fx:id="BIngresar" layoutX="186.0" layoutY="127.0" mnemonicParsing="false" onAction="#MostrarVentanaPrincipal" styleClass="boton" text="Ingresar" />-->
-      <Button fx:id="BPosta" layoutX="80.0" layoutY="175.0" mnemonicParsing="false" onAction="#MostrarVentanaPosta" text="Ingresar" />
+      <Button fx:id="BPosta" layoutX="228.0" layoutY="144.0" mnemonicParsing="false" onAction="#MostrarVentanaPosta" text="Acceder" />
+      <Label fx:id="EUsuario1" layoutX="58.0" layoutY="44.0" minHeight="16" minWidth="49.0" prefHeight="17.0" prefWidth="231.0" styleClass="etiqueta" text="Ingreso de Usuario" />
     </children>
 </AnchorPane>

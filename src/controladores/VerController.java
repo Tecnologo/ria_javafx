@@ -121,6 +121,8 @@ public class VerController implements Initializable {
             paisajeToDisplay.add(new DataPaisaje(p));
         } 
         table.setItems(paisajeToDisplay); 
+        table.setPrefHeight(250);
+        table.setPrefWidth(600);
         anchorPane.getChildren().addAll(table);
     }
 }             

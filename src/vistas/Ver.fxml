@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -11,12 +13,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<AnchorPane id="AnchorPane" onMouseClicked="#listarPaisajes" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.VerController">
+<AnchorPane id="AnchorPane" onMouseClicked="#listarPaisajes" prefHeight="440.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.VerController">
   <children>
-    <Label fx:id="LPaisajes" layoutX="109.0" layoutY="15.0" text="Paisajes" />
-    <ImageView fx:id="ima" fitHeight="150.0" fitWidth="200.0" layoutX="169.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
-    <Label id="lasd" fx:id="la" layoutX="507.0" layoutY="31.0" prefWidth="40.0" text="" />
-    <Button id="BAgregar" fx:id="BAgregarPaisaje" layoutX="457.0" layoutY="312.0" mnemonicParsing="false" onAction="#listarPaisajes" prefHeight="24.0" prefWidth="121.0" text="Listar Paisaje" />
-    <AnchorPane fx:id="anchorPane" layoutX="9.0" layoutY="32.0" prefHeight="280.0" prefWidth="581.0" /> 
+    <Label fx:id="LPaisajes" layoutX="26.0" layoutY="14.0" text="Paisajes" />
+    <Label id="lasd" fx:id="la" layoutX="75.0" layoutY="42.0" prefHeight="17.0" prefWidth="149.0" text="ejemplo" />
+    <Button id="BAgregar" fx:id="BAgregarPaisaje" layoutX="240.0" layoutY="320.0" mnemonicParsing="false" onAction="#listarPaisajes" prefHeight="24.0" prefWidth="121.0" text="Listar Paisaje" />
+    <AnchorPane fx:id="anchorPane" focusTraversable="true" layoutX="9.0" layoutY="69.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="240.0" prefWidth="583.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></AnchorPane>
+      <Label id="lasd" fx:id="usuarioLabel" layoutX="26.0" layoutY="42.0" prefHeight="17.0" prefWidth="42.0" text="Usuario" /> 
    </children>
 </AnchorPane>

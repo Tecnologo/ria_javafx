@@ -11,17 +11,18 @@
         <tabs>
           <Tab fx:id="homeTab" closable="false" text="Home">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="511.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="248.0" prefWidth="475.0">
                      <children>
                         <!--<Button fx:id="BAgregar" layoutX="370.0" layoutY="313.0" mnemonicParsing="false" onAction="#MostrarVentanaAdvertencia" text="Agregar" />-->
                         <!--<Button fx:id="BCargarImagen" layoutX="46.0" layoutY="52.0" mnemonicParsing="false" onAction="#MostrarVentanaBuscador" text="Cargar Imágen" />-->
-                        <Label fx:id="ETitulo" layoutX="41.0" layoutY="27.0" text="Titulo" />
-                        <Label fx:id="EDescripcion" layoutX="41.0" layoutY="52.0" text="Descripción" />
-                        <TextField fx:id="TTitulo" layoutX="122.0" layoutY="23.0" />
-                        <TextArea fx:id="TDescripcion" layoutX="122.0" layoutY="52.0" prefHeight="121.0" prefWidth="215.0" />
+                        <Label fx:id="ETitulo" layoutX="41.0" layoutY="65.0" text="Titulo" />
+                        <Label fx:id="EDescripcion" layoutX="41.0" layoutY="90.0" text="Descripción" />
+                        <TextField fx:id="TTitulo" layoutX="122.0" layoutY="61.0" />
+                        <TextArea fx:id="TDescripcion" layoutX="122.0" layoutY="90.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="137.0" prefWidth="215.0" />
                         <!--<ImageView fx:id="imagenPrueba" fitHeight="84.0" fitWidth="104.0" layoutX="238.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />-->
-                        <Label fx:id="EUsuario2" layoutX="356.0" layoutY="35.0" />
+                        <Label fx:id="EUsuario2" layoutX="122.0" layoutY="24.0" prefHeight="17.0" prefWidth="113.0" />
                         <Label fx:id="ENombre" layoutX="356.0" layoutY="52.0" />
+                        <Label fx:id="EUsuario21" layoutX="41.0" layoutY="24.0" prefHeight="17.0" prefWidth="60.0" text="Usuario" />
                         <!--<Button fx:id="BCambiar" layoutX="70.0" layoutY="31.0" mnemonicParsing="false" onAction="#MostrarPestañaVer" text="Cambiar Pestaña" />-->
                      </children></AnchorPane>
             </content>
