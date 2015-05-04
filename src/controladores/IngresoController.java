@@ -30,17 +30,13 @@ public class IngresoController implements Initializable {
      
     private PrincipalController controladorPrincipal;
 
-    @FXML private TextField TTitulo;
-//    @FXML public static TextField TTitulo;
-    @FXML private TextField TDescripcion;
-    //@FXML public static Button btn1;
-        
-//    private Zoologico ProgramaPrincipal = new Zoologico();
+    @FXML 
+    private TextField TTitulo;
+    @FXML 
+    private TextField TDescripcion;
+   
 
-    private Stage stagePrincipal;
-    
-//    private Stage stageAdvertencia;
-    
+    private Stage stagePrincipal; 
     Stage stageAdvertencia;
     
     private AnchorPane VentanaAdvertencia;
